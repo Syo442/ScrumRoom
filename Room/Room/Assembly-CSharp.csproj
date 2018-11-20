@@ -85,6 +85,7 @@
      <Compile Include="Assets\Library\ErbGameArt\Dynamic sky shader\Demo scene\SkyboxRotator.cs" />
      <Compile Include="Assets\Scripts\CarMoveLeftToRight.cs" />
      <Compile Include="Assets\Scripts\CarMoveRightToLeft.cs" />
+     <Compile Include="Assets\Scripts\Human.cs" />
      <None Include="Assets\Library\ErbGameArt\Dynamic sky shader\Materials\Read me!.txt" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleInsideMask.shader" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleOutsideMask.shader" />
