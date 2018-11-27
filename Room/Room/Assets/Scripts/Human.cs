@@ -21,5 +21,14 @@ public class Human : MonoBehaviour {
         {
             anim.SetBool("isWalk", false);
         }
+
+		if (Input.GetKey(KeyCode.Space))
+        {
+            anim.SetBool("Jumping", true);
+        }
+        else
+        {
+            anim.SetBool("Jumping", false);
+        }
 	}
 }
