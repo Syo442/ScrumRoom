@@ -36,11 +36,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Daytime: 1
-    - _Nightskyintensity: -0.2
+    - _Nightskyintensity: -10
     - _Skyintensity: -0.2
     - _SunIntensity: 2
     - _SunRadiusA: 0
-    - _SunRadiusB: 0.05
+    - _SunRadiusB: 0.098
     - _Usesecondcubemap: 1
     - _Useskycubemap: 0
     m_Colors:

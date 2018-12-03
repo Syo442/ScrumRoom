@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6a1c64ade1bf428db9713c5aeb41ec3, type: 3}
+  m_Name: RoomSubTitleTable
+  m_EditorClassIdentifier: 
+  SubTitleModels:
+  - character: "\u30B9\u30AF\u30E9"
+    subTitle: "\u7686\u3055\u3093\u3053\u3093\u306B\u3061\u308F"
+  - character: "\u30B9\u30AF\u30E9"
+    subTitle: "\u3053\u3053\u306F\u591A\u64691\u30D3\u30EB4\u968E\u30D5\u30ED\u30A2\u3067\u3059\u3002"
+  - character: "\u30B9\u30AF\u30E9"
+    subTitle: "\u4ECA\u65E5\u306F\u7686\u3055\u3093\u306B\u3053\u306E\u30D5\u30ED\u30A2\u3068\u696D\u52D9\u306B\u3064\u3044\u3066\u7D39\u4ECB\u3057\u307E\u3059\u3002"
+  - character: "\u30B9\u30AF\u30E9"
+    subTitle: "\u3053\u3053\u3067\u306F\u3001\u5C0F\u30BC\u30DF\u301C\u9AD8\u30BC\u30DF\u307E\u3067\u306E\u30C7\u30B8\u30BF\u30EB\u30A2\u30D7\u30EA\u958B\u767A\u3092\u884C\u3063\u3066\u3044\u307E\u3059"
+  - character: "\u30B9\u30AF\u30E9"
+    subTitle: "\u3053\u306E\u30B9\u30DA\u30FC\u30B9\u306F\u30B9\u30AF\u30E9\u30E0\u30EB\u30FC\u30E0"
+  - character: "\u30B9\u30AF\u30E9"
+    subTitle: "\u5404\u30BC\u30DF\u3054\u3068\u306B\u5225\u308C\u958B\u767A\u8005\u306F\u3053\u3053\u3067\u958B\u767A\u3092\u884C\u3063\u3066\u3044\u307E\u3059\u3002"
+  - character: "\u30B9\u30AF\u30E9"
+    subTitle: "\u3053\u3063\u3061\u306F\u3001\u904B\u7528\u30C1\u30FC\u30E0\u3084PM\u306E\u65B9\u3005\u304C\u696D\u52D9\u3092\u3057\u3066\u3044\u307E\u3059\u3002"
