@@ -26,6 +26,8 @@ public class SubTitle : MonoBehaviour {
 				subTitle.text = subTitlePrefarence.SubTitleModels[counter].subTitle;
 
 				counter ++;
+			}else{
+				gameObject.SetActive(false);
 			}
         }
 	}
