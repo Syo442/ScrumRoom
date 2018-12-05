@@ -16,19 +16,20 @@ public class SubTitle : MonoBehaviour {
 	void Start () {
 		charactor.text = "";
 		subTitle.text = "";
+
+		StartCoroutine(SubTitleStart ());
 	}
 	
 	
-	void Update () {
-		if (Input.GetKey(KeyCode.N)){
-			if(subTitlePrefarence.SubTitleModels.Count > counter){
-				charactor.text = subTitlePrefarence.SubTitleModels[counter].character;
-				subTitle.text = subTitlePrefarence.SubTitleModels[counter].subTitle;
+	IEnumerator SubTitleStart () {
+		while(subTitlePrefarence.SubTitleModels.Count > counter){
+			charactor.text = subTitlePrefarence.SubTitleModels[counter].character;
+			subTitle.text = subTitlePrefarence.SubTitleModels[counter].subTitle;
 
-				counter ++;
-			}else{
-				gameObject.SetActive(false);
-			}
-        }
+			yield return new WaitForSeconds(subTitlePrefarence.SubTitleModels[counter].viewTime);
+			counter ++;
+		}
+
+		gameObject.SetActive(false);
 	}
 }

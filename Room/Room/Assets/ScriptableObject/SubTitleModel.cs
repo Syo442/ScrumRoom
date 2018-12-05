@@ -6,4 +6,6 @@ using UnityEngine;
 public class SubTitleModel{
 	public string character;
     public string subTitle;
+
+    public float viewTime;
 }
