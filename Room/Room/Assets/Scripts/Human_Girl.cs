@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Human_Girl : MonoBehaviour {
 
+	public bool iswalk{get; set;}
+	public bool isTurnRight{get; set;}
+	public bool isTurnLeft{get; set;}
+	public bool isJump{get; set;}
+
+
 	Animator anim;
 
 	Vector3 touchStartPos;
@@ -14,7 +20,7 @@ public class Human_Girl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.UpArrow))
+		if (Input.GetKey(KeyCode.UpArrow) || iswalk)
         {
             anim.SetBool("isWalk", true);
 			transform.localPosition = new Vector3(transform.localPosition.x, 0.0f, transform.localPosition.z);
@@ -24,15 +30,15 @@ public class Human_Girl : MonoBehaviour {
             anim.SetBool("isWalk", false);
         }
 
-		if(Input.GetKey(KeyCode.RightArrow)){
-			transform.Rotate(new Vector3(0, -90, 0) * Time.deltaTime, Space.World);
-		}
-
-		if(Input.GetKey(KeyCode.LeftArrow)){
+		if(Input.GetKey(KeyCode.RightArrow) || isTurnRight){
 			transform.Rotate(new Vector3(0, 90, 0) * Time.deltaTime, Space.World);
 		}
 
-		if (Input.GetKey(KeyCode.Space))
+		if(Input.GetKey(KeyCode.LeftArrow) || isTurnLeft){
+			transform.Rotate(new Vector3(0, -90, 0) * Time.deltaTime, Space.World);
+		}
+
+		if (Input.GetKey(KeyCode.Space) || isJump)
         {
             anim.SetBool("Jumping", true);
         }

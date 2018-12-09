@@ -158,6 +158,7 @@
      <Compile Include="Assets\Scripts\Park\CarMoveLeftToRight.cs" />
      <Compile Include="Assets\Scripts\Park\CarMoveRightToLeft.cs" />
      <Compile Include="Assets\Scripts\Park\ParkCamera.cs" />
+     <Compile Include="Assets\Scripts\RoomAnimeController.cs" />
      <Compile Include="Assets\Scripts\SubTitle.cs" />
      <None Include="Assets\Library\ErbGameArt\Dynamic sky shader\Materials\Read me!.txt" />
      <None Include="Assets\Anima2D\Examples\Shaders\VisibleInsideMask.shader" />
