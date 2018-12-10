@@ -44,20 +44,20 @@ public class Human_Girl : MonoBehaviour {
         }
 
 		///タッチ対応
-		if (Input.GetKeyDown(KeyCode.Mouse0)){
-			anim.SetBool("isWalk", true);
-			touchStartPos = new Vector3(Input.mousePosition.x,
-										Input.mousePosition.y,
-										Input.mousePosition.z);
-		}
+		// if (Input.GetKeyDown(KeyCode.Mouse0)){
+		// 	anim.SetBool("isWalk", true);
+		// 	touchStartPos = new Vector3(Input.mousePosition.x,
+		// 								Input.mousePosition.y,
+		// 								Input.mousePosition.z);
+		// }
 
-		if (Input.GetKeyUp(KeyCode.Mouse0)){
-			anim.SetBool("isWalk", false);
-			touchEndPos = new Vector3(Input.mousePosition.x,
-									Input.mousePosition.y,
-									Input.mousePosition.z);
-			GetDirection();
-		}
+		// if (Input.GetKeyUp(KeyCode.Mouse0)){
+		// 	anim.SetBool("isWalk", false);
+		// 	touchEndPos = new Vector3(Input.mousePosition.x,
+		// 							Input.mousePosition.y,
+		// 							Input.mousePosition.z);
+		// 	GetDirection();
+		// }
 	}
 
 	void GetDirection(){
