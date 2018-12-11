@@ -21,6 +21,7 @@ public class RoomAnimeController : MonoBehaviour {
 	VideoPlayer mPlayer;
 	bool imageViewFlag;
 	bool videoViewFlag;
+	int imageCounter;
 
 	// 皆さんこんにちわ
 	// ここは多摩1ビル4階フロアです。
@@ -54,6 +55,7 @@ public class RoomAnimeController : MonoBehaviour {
 		video.localScale = Vector3.zero;
 		imageViewFlag = false;
 		videoViewFlag = false;
+		imageCounter = 0;
 		StartCoroutine(AnimeController());
 	}
 	
@@ -112,7 +114,7 @@ public class RoomAnimeController : MonoBehaviour {
 		human_Girl.iswalk = false;
 
 		human_Girl.isTurnRight = true;
-		yield return new WaitForSeconds(0.60f);
+		yield return new WaitForSeconds(0.9f);
 		human_Girl.isTurnRight = false;
 
 
@@ -123,17 +125,23 @@ public class RoomAnimeController : MonoBehaviour {
 
 	public void ViewImage(){
 		if(!imageViewFlag){
-			image1.DOScale(1.0f, 1.0f);
-			image2.DOScale(1.0f, 1.0f);
-			image3.DOScale(1.0f, 1.0f);
-
+			if(imageCounter == 0){
+				image1.DOScale(1.0f, 1.0f);
+			}else if(imageCounter == 1){
+				image2.DOScale(1.0f, 1.0f);
+				image3.DOScale(1.0f, 1.0f);
+			}
 			imageViewFlag = true;
 		}else{
-			image1.DOScale(0.0f, 1.0f);
-			image2.DOScale(0.0f, 1.0f);
-			image3.DOScale(0.0f, 1.0f);
+			if(imageCounter == 0){
+				image1.DOScale(0.0f, 1.0f);
+			}else if(imageCounter == 1){
+				image2.DOScale(0.0f, 1.0f);
+				image3.DOScale(0.0f, 1.0f);
+			}
 
 			imageViewFlag = false;
+			imageCounter ++;
 		}
 	}
 
