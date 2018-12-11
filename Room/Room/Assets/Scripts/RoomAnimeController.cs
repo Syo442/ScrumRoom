@@ -23,30 +23,37 @@ public class RoomAnimeController : MonoBehaviour {
 	bool videoViewFlag;
 	int imageCounter;
 
+	//パパあの建物なに〜？
+	//あれはベネッセって言う会社だよ
+	//せつこもしてるチャレンジはここでつくられてるんだよ
+	//そうなんだ〜
+	//中はどんな感じなんだろー？
+
 	// 皆さんこんにちわ
 	// ここは多摩1ビル4階フロアです。
 	// 今日は皆さんにこのフロアと業務について紹介します。
-	// ここでは、小ゼミ〜高ゼミまでのデジタルアプリ開発を行っています(チャレンジタッチやiPhoneのが画像だす)
+	// ここでは、小ゼミ〜高ゼミまでのデジタルアプリ開発を行っています。
 	// このスペースはスクラムルーム
-	// スクラムルームでは、文字通りスクラム開発が行われています。
+	// スクラムルームでは、スクラム開発やアジャイル開発など
+	// 業務に合わせた開発を行っています。
 	// 部屋の壁は全てホワイトボードになっており、
-	// 文字を書いたり付箋を貼ったりと効率化のための機能が備わっています。
+	// 文字を書いたり付箋を貼ったりと、効率化のための機能が備わっています。
 	// 事業部の方とのコミュニケーションの場にもなっており、
 	// 開発者と事業部が一丸となった高速開発を行っています。
-	//そのほかにもこのフロアは緑と木目、白が基調色となっており
+	//そのほかにもフロア全体を通して緑と白を基調色としたデザインになっており
 	//集中して業務が行える工夫がいたるところにあります。
 
 
 	// 今までに開発を行った一例を紹介します。
-	// こちらは、小ゼミ◯年生が対象の「英語で怪盗大追跡」というアプリです。
+	// こちらは、小ゼミ5年生が対象の「英語で怪盗大追跡」というアプリです。
 	// このアプリは、インフォシェルメンバーの糸井さんが単独で開発を行ったものです。
-	// こちらのアプリの総開発期間は約3ヶ月となっており、
-	// 途中での仕様追加やデザイン変更にも柔軟に対応ができ
-	//デジタルアプリ内製の強みを発揮できた案件となっています。
+	// 開発期間は約3ヶ月となっています。
+	// 内製の強みを発揮し途中の仕様追加や　
+	// デザイン変更にも柔軟な対応ができた案件となっています。
 
-	// このように私たち、デジタル開発メンバーは日々、
-	// 最新技術や効率化、事業部に寄り添った開発により
-	// 子供達の学力向上や未来に貢献しています。
+	// このように私たち、デジタル開発メンバーは日々の開発を効率化し、
+	// また、事業部に寄り添った開発を実現することで、
+	// 子供達の明るい未来に貢献しています。
 
 	void Start () {
 		image1.localScale = Vector3.zero;
@@ -60,7 +67,7 @@ public class RoomAnimeController : MonoBehaviour {
 	}
 	
 	IEnumerator AnimeController(){
-		yield return new WaitForSeconds(9.0f);
+		yield return new WaitForSeconds(11.5f);
 
 		human_Girl.isTurnRight = true;
 		yield return new WaitForSeconds(0.2f);
@@ -71,7 +78,7 @@ public class RoomAnimeController : MonoBehaviour {
 		human_Girl.iswalk = false;
 
 		//待機
-		yield return new WaitForSeconds(8.5f);
+		yield return new WaitForSeconds(9.5f);
 
 		human_Girl.isTurnRight = true;
 		yield return new WaitForSeconds(0.85f);
@@ -86,7 +93,7 @@ public class RoomAnimeController : MonoBehaviour {
 		human_Girl.isTurnLeft = false;
 
 		//待機
-		yield return new WaitForSeconds(22.0f);
+		yield return new WaitForSeconds(29.0f);
 
 		human_Girl.isTurnRight = true;
 		yield return new WaitForSeconds(1.00f);
@@ -102,7 +109,7 @@ public class RoomAnimeController : MonoBehaviour {
 		human_Girl.isTurnLeft = false;
 
 		//待機
-		yield return new WaitForSeconds(40.0f);
+		yield return new WaitForSeconds(48.0f);
 
 		human_Girl.isTurnRight = true;
 		yield return new WaitForSeconds(0.55f);
@@ -114,7 +121,7 @@ public class RoomAnimeController : MonoBehaviour {
 		human_Girl.iswalk = false;
 
 		human_Girl.isTurnRight = true;
-		yield return new WaitForSeconds(0.9f);
+		yield return new WaitForSeconds(0.7f);
 		human_Girl.isTurnRight = false;
 
 
