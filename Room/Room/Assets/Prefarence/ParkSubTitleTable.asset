@@ -33,3 +33,6 @@ MonoBehaviour:
   - character: 
     subTitle: 
     viewTime: 3
+  - character: "\u30D9\u30CD\u5B50"
+    subTitle: "\u3042\u3063\u9CE5\u304C\uFF01\uFF01\uFF01"
+    viewTime: 1.3
