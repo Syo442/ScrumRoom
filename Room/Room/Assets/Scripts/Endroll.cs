@@ -9,6 +9,6 @@ public class Endroll : MonoBehaviour {
 	RectTransform text;
 	
 	void Start () {
-			text.DOLocalMoveY(1200.0f, 30.0f).SetRelative();
+			text.DOLocalMoveY(1500.0f, 42.0f).SetRelative().SetEase(Ease.Linear);
 	}
 }
