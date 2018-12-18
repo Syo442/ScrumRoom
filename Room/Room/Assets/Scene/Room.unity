@@ -2933,6 +2933,7 @@ GameObject:
   - component: {fileID: 201599918}
   - component: {fileID: 201599917}
   - component: {fileID: 201599919}
+  - component: {fileID: 201599920}
   m_Layer: 5
   m_Name: backGround
   m_TagString: Untagged
@@ -3007,6 +3008,87 @@ MonoBehaviour:
   charactor: {fileID: 493716361}
   subTitle: {fileID: 100346711}
   subTitlePrefarence: {fileID: 11400000, guid: 79c3f724f20784d4ca68648c82b6b8a1, type: 2}
+  voice: {fileID: 8300000, guid: be95192549a0a44bea63bf357aa84fec, type: 3}
+--- !u!82 &201599920
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 201599915}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &205261238
 Prefab:
   m_ObjectHideFlags: 0
@@ -3422,10 +3504,10 @@ RectTransform:
   m_Father: {fileID: 1458174740}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 156.3, y: 35.2}
-  m_SizeDelta: {x: 478.8, y: 269.4}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 223, y: 54}
+  m_SizeDelta: {x: -536.1, y: -301.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230890439
 MonoBehaviour:
@@ -3521,10 +3603,10 @@ RectTransform:
   m_Father: {fileID: 1458174740}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 140.6, y: -87}
-  m_SizeDelta: {x: 297.1, y: 151.7}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 323.7, y: -124.2}
+  m_SizeDelta: {x: -796.1, y: -445.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233024511
 MonoBehaviour:
@@ -18948,10 +19030,10 @@ RectTransform:
   m_Father: {fileID: 1458174740}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225.75, y: 104.6}
-  m_SizeDelta: {x: 285.3, y: 176.29}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 83.35, y: 156}
+  m_SizeDelta: {x: -815.4, y: -437.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734122855
 MonoBehaviour:
@@ -19016,10 +19098,10 @@ RectTransform:
   m_Father: {fileID: 1458174740}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 156.3, y: 62}
-  m_SizeDelta: {x: 411.45, y: 275.9}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 206.8, y: 54.6}
+  m_SizeDelta: {x: -678.9, y: -325.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734227668
 MonoBehaviour:
