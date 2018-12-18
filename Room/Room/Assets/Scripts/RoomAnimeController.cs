@@ -81,7 +81,7 @@ public class RoomAnimeController : MonoBehaviour {
 		yield return new WaitForSeconds(9.5f);
 
 		human_Girl.isTurnRight = true;
-		yield return new WaitForSeconds(0.85f);
+		yield return new WaitForSeconds(0.95f);
 		human_Girl.isTurnRight = false;
 
 		human_Girl.iswalk = true;
@@ -96,7 +96,7 @@ public class RoomAnimeController : MonoBehaviour {
 		yield return new WaitForSeconds(29.0f);
 
 		human_Girl.isTurnRight = true;
-		yield return new WaitForSeconds(1.00f);
+		yield return new WaitForSeconds(1.0f);
 		human_Girl.isTurnRight = false;
 
 		human_Girl.iswalk = true;
