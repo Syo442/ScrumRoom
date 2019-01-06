@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Park.unity
+- path: Assets/Scene/Endroll.unity
   isLoaded: 1
   isActive: 1
